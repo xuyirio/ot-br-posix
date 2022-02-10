@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">openthread-br
-   &#160;<span id="projectnumber">0.3.0-1fc5673</span>
+   &#160;<span id="projectnumber">0.3.0-449a79d</span>
    </div>
   </td>
  </tr>
@@ -237,37 +237,40 @@ $(function() {
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a8a0986338dc46f5ec71d1b728da0a7af">IsServiceTypeEqual</a>(std::string aFirstType, std::string aSecondType);</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d53/common_2types_8hpp.html#a9addd74a14dca1dab1b3e7a8205455aa">otbrError</a> <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a362b6086d307ece31b497d90944d5bef">EncodeTxtData</a>(<span class="keyword">const</span> TxtList &amp;aTxtList, std::vector&lt;uint8_t&gt; &amp;aTxtData);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    enum : uint8_t</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    {</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        kMaxTextEntrySize = 255,</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    };</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">void</span> OnServiceResolved(<span class="keyword">const</span> std::string &amp;aType, <span class="keyword">const</span> DiscoveredInstanceInfo &amp;aInstanceInfo);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">void</span> OnServiceRemoved(uint32_t aNetifIndex, <span class="keyword">const</span> std::string &amp;aType, <span class="keyword">const</span> std::string &amp;aInstanceName);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordtype">void</span> OnHostResolved(<span class="keyword">const</span> std::string &amp;aHostName, <span class="keyword">const</span> DiscoveredHostInfo &amp;aHostInfo);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aab5a6f11910e8761461807be17ea181a">PublishServiceHandler</a> mServiceHandler        = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">void</span> *                mServiceHandlerContext = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aaad852ef1bb69380d2537feafa0e7337">PublishHostHandler</a> mHostHandler        = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordtype">void</span> *             mHostHandlerContext = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    uint64_t mNextSubscriberId = 1;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    std::map&lt;uint64_t, std::pair&lt;DiscoveredServiceInstanceCallback, DiscoveredHostCallback&gt;&gt; mDiscoveredCallbacks;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;};</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;} <span class="comment">// namespace Mdns</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;} <span class="comment">// namespace otbr</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">#endif // OTBR_AGENT_MDNS_HPP_</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d53/common_2types_8hpp.html#a9addd74a14dca1dab1b3e7a8205455aa">otbrError</a> <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a362b6086d307ece31b497d90944d5bef">EncodeTxtData</a>(<span class="keyword">const</span> TxtList &amp;aTxtList, std::vector&lt;uint8_t&gt; &amp;aTxtData);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d53/common_2types_8hpp.html#a9addd74a14dca1dab1b3e7a8205455aa">otbrError</a> <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aeb3784d13ebd0b8e9d54f4f746d260ad">DecodeTxtData</a>(TxtList &amp;aTxtList, <span class="keyword">const</span> uint8_t *aTxtData, uint16_t aTxtLength);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    enum : uint8_t</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        kMaxTextEntrySize = 255,</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    };</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordtype">void</span> OnServiceResolved(<span class="keyword">const</span> std::string &amp;aType, <span class="keyword">const</span> DiscoveredInstanceInfo &amp;aInstanceInfo);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordtype">void</span> OnServiceRemoved(uint32_t aNetifIndex, <span class="keyword">const</span> std::string &amp;aType, <span class="keyword">const</span> std::string &amp;aInstanceName);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">void</span> OnHostResolved(<span class="keyword">const</span> std::string &amp;aHostName, <span class="keyword">const</span> DiscoveredHostInfo &amp;aHostInfo);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aab5a6f11910e8761461807be17ea181a">PublishServiceHandler</a> mServiceHandler        = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordtype">void</span> *                mServiceHandlerContext = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="code" href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aaad852ef1bb69380d2537feafa0e7337">PublishHostHandler</a> mHostHandler        = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordtype">void</span> *             mHostHandlerContext = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    uint64_t mNextSubscriberId = 1;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    std::map&lt;uint64_t, std::pair&lt;DiscoveredServiceInstanceCallback, DiscoveredHostCallback&gt;&gt; mDiscoveredCallbacks;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;};</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;} <span class="comment">// namespace Mdns</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;} <span class="comment">// namespace otbr</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="preprocessor">#endif // OTBR_AGENT_MDNS_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_aab5a6f11910e8761461807be17ea181a"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aab5a6f11910e8761461807be17ea181a">otbr::Mdns::Publisher::PublishServiceHandler</a></div><div class="ttdeci">void(* PublishServiceHandler)(const std::string &amp;aName, const std::string &amp;aType, otbrError aError, void *aContext)</div><div class="ttdef"><b>Definition:</b> mdns.hpp:167</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a9e445114c02d9fd53f962c464f4f8e02"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a9e445114c02d9fd53f962c464f4f8e02">otbr::Mdns::Publisher::SubscribeService</a></div><div class="ttdeci">virtual void SubscribeService(const std::string &amp;aType, const std::string &amp;aInstanceName)=0</div></div>
+<div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_aeb3784d13ebd0b8e9d54f4f746d260ad"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aeb3784d13ebd0b8e9d54f4f746d260ad">otbr::Mdns::Publisher::DecodeTxtData</a></div><div class="ttdeci">static otbrError DecodeTxtData(TxtList &amp;aTxtList, const uint8_t *aTxtData, uint16_t aTxtLength)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:82</div></div>
 <div class="ttc" id="astructotbr_1_1Mdns_1_1Publisher_1_1TxtEntry_html"><div class="ttname"><a href="../../d0/dee/structotbr_1_1Mdns_1_1Publisher_1_1TxtEntry.html">otbr::Mdns::Publisher::TxtEntry</a></div><div class="ttdef"><b>Definition:</b> mdns.hpp:71</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a8a0986338dc46f5ec71d1b728da0a7af"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a8a0986338dc46f5ec71d1b728da0a7af">otbr::Mdns::Publisher::IsServiceTypeEqual</a></div><div class="ttdeci">static bool IsServiceTypeEqual(std::string aFirstType, std::string aSecondType)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:45</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a78f355fa9bac6f1c92d34c2dc984c149"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a78f355fa9bac6f1c92d34c2dc984c149">otbr::Mdns::Publisher::UnsubscribeHost</a></div><div class="ttdeci">virtual void UnsubscribeHost(const std::string &amp;aHostName)=0</div></div>
@@ -275,7 +278,7 @@ $(function() {
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_ac7ec38aa3c41207981ab5779a6abfa9c"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#ac7ec38aa3c41207981ab5779a6abfa9c">otbr::Mdns::Publisher::Start</a></div><div class="ttdeci">virtual otbrError Start(void)=0</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a454e7ed9403a336941633b1610251567"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a454e7ed9403a336941633b1610251567">otbr::Mdns::Publisher::SubscribeHost</a></div><div class="ttdeci">virtual void SubscribeHost(const std::string &amp;aHostName)=0</div></div>
 <div class="ttc" id="astructotbr_1_1Mdns_1_1Publisher_1_1DiscoveredInstanceInfo_html"><div class="ttname"><a href="../../d9/d60/structotbr_1_1Mdns_1_1Publisher_1_1DiscoveredInstanceInfo.html">otbr::Mdns::Publisher::DiscoveredInstanceInfo</a></div><div class="ttdef"><b>Definition:</b> mdns.hpp:100</div></div>
-<div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a54d15649205370cd1b67002c8d88511e"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a54d15649205370cd1b67002c8d88511e">otbr::Mdns::Publisher::AddSubscriptionCallbacks</a></div><div class="ttdeci">uint64_t AddSubscriptionCallbacks(DiscoveredServiceInstanceCallback aInstanceCallback, DiscoveredHostCallback aHostCallback)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:95</div></div>
+<div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a54d15649205370cd1b67002c8d88511e"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a54d15649205370cd1b67002c8d88511e">otbr::Mdns::Publisher::AddSubscriptionCallbacks</a></div><div class="ttdeci">uint64_t AddSubscriptionCallbacks(DiscoveredServiceInstanceCallback aInstanceCallback, DiscoveredHostCallback aHostCallback)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:129</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_aacf808a791a332255fef305a2756f3c6"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aacf808a791a332255fef305a2756f3c6">otbr::Mdns::Publisher::UnsubscribeService</a></div><div class="ttdeci">virtual void UnsubscribeService(const std::string &amp;aType, const std::string &amp;aInstanceName)=0</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a362b6086d307ece31b497d90944d5bef"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a362b6086d307ece31b497d90944d5bef">otbr::Mdns::Publisher::EncodeTxtData</a></div><div class="ttdeci">static otbrError EncodeTxtData(const TxtList &amp;aTxtList, std::vector&lt; uint8_t &gt; &amp;aTxtData)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:60</div></div>
 <div class="ttc" id="astructotbr_1_1Mdns_1_1Publisher_1_1DiscoveredHostInfo_html_a52fd4104c6c792921fffc1cca55b4ae0"><div class="ttname"><a href="../../d9/db0/structotbr_1_1Mdns_1_1Publisher_1_1DiscoveredHostInfo.html#a52fd4104c6c792921fffc1cca55b4ae0">otbr::Mdns::Publisher::DiscoveredHostInfo::mTtl</a></div><div class="ttdeci">uint32_t mTtl</div><div class="ttdoc">Host TTL.</div><div class="ttdef"><b>Definition:</b> mdns.hpp:122</div></div>
@@ -297,7 +300,7 @@ $(function() {
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_adeb467b4e2b34bd533156005f56e0844"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#adeb467b4e2b34bd533156005f56e0844">otbr::Mdns::Publisher::Stop</a></div><div class="ttdeci">virtual void Stop(void)=0</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_aea1cfd72140d8d469b149ee279b44766"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#aea1cfd72140d8d469b149ee279b44766">otbr::Mdns::Publisher::DiscoveredHostCallback</a></div><div class="ttdeci">std::function&lt; void(const std::string &amp;aHostName, const DiscoveredHostInfo &amp;aHostInfo)&gt; DiscoveredHostCallback</div><div class="ttdef"><b>Definition:</b> mdns.hpp:137</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html">otbr::Mdns::Publisher</a></div><div class="ttdef"><b>Definition:</b> mdns.hpp:64</div></div>
-<div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a5e012095ac2592ec6fb3a314039bdf1e"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a5e012095ac2592ec6fb3a314039bdf1e">otbr::Mdns::Publisher::RemoveSubscriptionCallbacks</a></div><div class="ttdeci">void RemoveSubscriptionCallbacks(uint64_t aSubscriberId)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:82</div></div>
+<div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a5e012095ac2592ec6fb3a314039bdf1e"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a5e012095ac2592ec6fb3a314039bdf1e">otbr::Mdns::Publisher::RemoveSubscriptionCallbacks</a></div><div class="ttdeci">void RemoveSubscriptionCallbacks(uint64_t aSubscriberId)</div><div class="ttdef"><b>Definition:</b> mdns.cpp:116</div></div>
 <div class="ttc" id="astructotbr_1_1Mdns_1_1Publisher_1_1DiscoveredHostInfo_html_af785c3f55e5023467549702dc77c2c81"><div class="ttname"><a href="../../d9/db0/structotbr_1_1Mdns_1_1Publisher_1_1DiscoveredHostInfo.html#af785c3f55e5023467549702dc77c2c81">otbr::Mdns::Publisher::DiscoveredHostInfo::mHostName</a></div><div class="ttdeci">std::string mHostName</div><div class="ttdoc">Full host name.</div><div class="ttdef"><b>Definition:</b> mdns.hpp:120</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a9837d2cc6a4f8201d0fe69f00bbe72e6"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a9837d2cc6a4f8201d0fe69f00bbe72e6">otbr::Mdns::Publisher::SetPublishServiceHandler</a></div><div class="ttdeci">void SetPublishServiceHandler(PublishServiceHandler aHandler, void *aContext)</div><div class="ttdef"><b>Definition:</b> mdns.hpp:189</div></div>
 <div class="ttc" id="astructotbr_1_1Mdns_1_1Publisher_1_1TxtEntry_html_a5048dc17ab692321b10018fea0e99856"><div class="ttname"><a href="../../d0/dee/structotbr_1_1Mdns_1_1Publisher_1_1TxtEntry.html#a5048dc17ab692321b10018fea0e99856">otbr::Mdns::Publisher::TxtEntry::mName</a></div><div class="ttdeci">std::string mName</div><div class="ttdoc">The name of the TXT entry.</div><div class="ttdef"><b>Definition:</b> mdns.hpp:73</div></div>
