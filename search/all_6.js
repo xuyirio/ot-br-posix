@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['get_137',['Get',['../d2/dd0/classotbr_1_1InstanceParams.html#a25f242442787cbc7eb7b0ed23f2a1d58',1,'otbr::InstanceParams::Get()'],['../d6/d8f/classotbr_1_1Crc16.html#ac4f699b3cdca9c2cdac55f44ca4c5d2b',1,'otbr::Crc16::Get()']]],
-  ['getactivedatasettlvs_138',['GetActiveDatasetTlvs',['../df/dcc/classotbr_1_1DBus_1_1ThreadApiDBus.html#a299f816e4b61fb5b08494e4481be7ece',1,'otbr::DBus::ThreadApiDBus']]],
-  ['getavahipoll_139',['GetAvahiPoll',['../d5/d23/classotbr_1_1Mdns_1_1Poller.html#a12c7711328d9cb94ccb562931b6eacfc',1,'otbr::Mdns::Poller']]],
+  ['get_138',['Get',['../d2/dd0/classotbr_1_1InstanceParams.html#a25f242442787cbc7eb7b0ed23f2a1d58',1,'otbr::InstanceParams::Get()'],['../d6/d8f/classotbr_1_1Crc16.html#ac4f699b3cdca9c2cdac55f44ca4c5d2b',1,'otbr::Crc16::Get()']]],
+  ['getactivedatasettlvs_139',['GetActiveDatasetTlvs',['../df/dcc/classotbr_1_1DBus_1_1ThreadApiDBus.html#a299f816e4b61fb5b08494e4481be7ece',1,'otbr::DBus::ThreadApiDBus']]],
   ['getbackboneifname_140',['GetBackboneIfName',['../d2/dd0/classotbr_1_1InstanceParams.html#add5646c234fbb35cb317dbaa35e0c082',1,'otbr::InstanceParams']]],
   ['getbloomfilter_141',['GetBloomFilter',['../d6/de8/classotbr_1_1SteeringData.html#af9cd3916d56098e8f5ebbefca84392bd',1,'otbr::SteeringData']]],
   ['getbody_142',['GetBody',['../da/df0/classotbr_1_1rest_1_1Request.html#a28358ce62ac52e27c96d3a1e9d9263a3',1,'otbr::rest::Request::GetBody()'],['../d2/db0/classotbr_1_1rest_1_1Response.html#a5f82f4e3d5ab9b4428525dd12b9dfdc9',1,'otbr::rest::Response::GetBody()']]],

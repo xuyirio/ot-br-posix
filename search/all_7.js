@@ -12,5 +12,6 @@ var searchData=
   ['handlejoinnetworkrequest_198',['HandleJoinNetworkRequest',['../d3/d46/classotbr_1_1Web_1_1WpanService.html#a3e1c5febcdf61b3ccd155ca8bd1fa3cd',1,'otbr::Web::WpanService']]],
   ['handlestatusrequest_199',['HandleStatusRequest',['../d3/d46/classotbr_1_1Web_1_1WpanService.html#a988847b3ca6b43e85212d6fba9079869',1,'otbr::Web::WpanService']]],
   ['hex_2ecpp_200',['hex.cpp',['../d4/dfd/hex_8cpp.html',1,'']]],
-  ['hex_2ehpp_201',['hex.hpp',['../df/d51/hex_8hpp.html',1,'']]]
+  ['hex_2ehpp_201',['hex.hpp',['../df/d51/hex_8hpp.html',1,'']]],
+  ['hostregistration_202',['HostRegistration',['../d4/d91/classotbr_1_1Mdns_1_1Publisher_1_1HostRegistration.html',1,'otbr::Mdns::Publisher']]]
 ];
