@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">openthread-br
-   &#160;<span id="projectnumber">0.3.0-84b7b2f</span>
+   &#160;<span id="projectnumber">0.3.0-d019cec</span>
    </div>
   </td>
  </tr>
@@ -279,8 +279,8 @@ $(function() {
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">struct </span>HostSubscription : <span class="keyword">public</span> Subscription</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keyword">explicit</span> HostSubscription(<a class="code" href="../../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html">PublisherAvahi</a> &amp;aMDnsSd, std::string aHostName)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            : Subscription(aMDnsSd)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keyword">explicit</span> HostSubscription(<a class="code" href="../../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html">PublisherAvahi</a> &amp;aAvahiPublisher, std::string aHostName)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            : Subscription(aAvahiPublisher)</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            , mHostName(std::move(aHostName))</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            , mRecordBrowser(<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        {</div>
@@ -374,7 +374,7 @@ $(function() {
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html_a5ca42e0c19980f5cf2c53dada1129171"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html#a5ca42e0c19980f5cf2c53dada1129171">otbr::Mdns::Publisher::StateCallback</a></div><div class="ttdeci">std::function&lt; void(State aNewState)&gt; StateCallback</div><div class="ttdef"><b>Definition:</b> mdns.hpp:154</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1Publisher_html"><div class="ttname"><a href="../../da/ddc/classotbr_1_1Mdns_1_1Publisher.html">otbr::Mdns::Publisher</a></div><div class="ttdef"><b>Definition:</b> mdns.hpp:66</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1PublisherAvahi_html_a03600b58800e7dd611d622848800cd47"><div class="ttname"><a href="../../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html#a03600b58800e7dd611d622848800cd47">otbr::Mdns::PublisherAvahi::UnsubscribeHost</a></div><div class="ttdeci">void UnsubscribeHost(const std::string &amp;aHostName) override</div><div class="ttdef"><b>Definition:</b> mdns_avahi.cpp:867</div></div>
-<div class="ttc" id="acommon_2types_8hpp_html_a9addd74a14dca1dab1b3e7a8205455aa"><div class="ttname"><a href="../../dc/d53/common_2types_8hpp.html#a9addd74a14dca1dab1b3e7a8205455aa">otbrError</a></div><div class="ttdeci">otbrError</div><div class="ttdef"><b>Definition:</b> types.hpp:69</div></div>
+<div class="ttc" id="acommon_2types_8hpp_html_a9addd74a14dca1dab1b3e7a8205455aa"><div class="ttname"><a href="../../dc/d53/common_2types_8hpp.html#a9addd74a14dca1dab1b3e7a8205455aa">otbrError</a></div><div class="ttdeci">otbrError</div><div class="ttdef"><b>Definition:</b> types.hpp:70</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1PublisherAvahi_html_a5380ae44ef5f58e1751a888aae90b8ee"><div class="ttname"><a href="../../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html#a5380ae44ef5f58e1751a888aae90b8ee">otbr::Mdns::PublisherAvahi::SubscribeHost</a></div><div class="ttdeci">void SubscribeHost(const std::string &amp;aHostName) override</div><div class="ttdef"><b>Definition:</b> mdns_avahi.cpp:856</div></div>
 <div class="ttc" id="aclassotbr_1_1Mdns_1_1PublisherAvahi_html"><div class="ttname"><a href="../../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html">otbr::Mdns::PublisherAvahi</a></div><div class="ttdef"><b>Definition:</b> mdns_avahi.hpp:71</div></div>
 <div class="ttc" id="amdns_8hpp_html"><div class="ttname"><a href="../../de/d7c/mdns_8hpp.html">mdns.hpp</a></div></div>
