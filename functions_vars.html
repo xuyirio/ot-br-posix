@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">openthread-br
-   &#160;<span id="projectnumber">0.3.0-7b29edf</span>
+   &#160;<span id="projectnumber">0.3.0-ba824df</span>
    </div>
   </td>
  </tr>
@@ -122,6 +122,9 @@ $(function() {
 <li>mDp
 : <a class="el" href="d5/d02/structotbr_1_1DBus_1_1OnMeshPrefix.html#ad7db4bff1f8b30e2a890e2fe5e7f7c16">otbr::DBus::OnMeshPrefix</a>
 </li>
+<li>mDuplicated
+: <a class="el" href="df/d4d/structotbr_1_1MdnsResponseCounters.html#aab7022ea62db26b0921cd2f634db65ea">otbr::MdnsResponseCounters</a>
+</li>
 <li>mEvents
 : <a class="el" href="de/d3f/structAvahiWatch.html#a3924018de3fcf1df54feec74ac44a851">AvahiWatch</a>
 </li>
@@ -165,11 +168,20 @@ $(function() {
 , <a class="el" href="d9/db0/structotbr_1_1Mdns_1_1Publisher_1_1DiscoveredHostInfo.html#af785c3f55e5023467549702dc77c2c81">otbr::Mdns::Publisher::DiscoveredHostInfo</a>
 , <a class="el" href="d9/d60/structotbr_1_1Mdns_1_1Publisher_1_1DiscoveredInstanceInfo.html#a1ca650684bc5115d84f7bc8d08b1073e">otbr::Mdns::Publisher::DiscoveredInstanceInfo</a>
 </li>
+<li>mHostRegistrationEmaLatency
+: <a class="el" href="df/d8c/structotbr_1_1MdnsTelemetryInfo.html#a91806b5fee6de6fe355a39e4d27ef24c">otbr::MdnsTelemetryInfo</a>
+</li>
+<li>mHostResolutionEmaLatency
+: <a class="el" href="df/d8c/structotbr_1_1MdnsTelemetryInfo.html#a115359bb85b7b418a2e382eb35a8c6e3">otbr::MdnsTelemetryInfo</a>
+</li>
 <li>mHosts
 : <a class="el" href="d9/dc0/structotbr_1_1DBus_1_1SrpServerInfo.html#a2d50a538b5baa6d98d42fa5a47ef2173">otbr::DBus::SrpServerInfo</a>
 </li>
 <li>mInstanceName
 : <a class="el" href="d1/de1/structDnsNameInfo.html#a81271f05a33b5c6057e8fbdfd9c4e016">DnsNameInfo</a>
+</li>
+<li>mInvalidArgs
+: <a class="el" href="df/d4d/structotbr_1_1MdnsResponseCounters.html#a67b169d399ec5c5a167f75719a777b2a">otbr::MdnsResponseCounters</a>
 </li>
 <li>mIsChild
 : <a class="el" href="d2/d47/structotbr_1_1DBus_1_1NeighborInfo.html#a3434036a56475101da3fe0555c5b4fb4">otbr::DBus::NeighborInfo</a>
@@ -247,6 +259,12 @@ $(function() {
 </li>
 <li>mNextHopIsThisDevice
 : <a class="el" href="de/d00/structotbr_1_1DBus_1_1ExternalRoute.html#a0e5049b249826148c0881a916b948661">otbr::DBus::ExternalRoute</a>
+</li>
+<li>mNotFound
+: <a class="el" href="df/d4d/structotbr_1_1MdnsResponseCounters.html#a4e68fda2ab1b14c4f150d2c69019603d">otbr::MdnsResponseCounters</a>
+</li>
+<li>mNotImplemented
+: <a class="el" href="df/d4d/structotbr_1_1MdnsResponseCounters.html#a95d59bfe3744e8e3413cf26f9ba18200">otbr::MdnsResponseCounters</a>
 </li>
 <li>mNotImplementedResponse
 : <a class="el" href="d0/daa/structotbr_1_1DBus_1_1DnssdCounters.html#a4df0d905648bef7ffc722d2fd5d16ee5">otbr::DBus::DnssdCounters</a>
@@ -388,6 +406,12 @@ $(function() {
 <li>mServiceName
 : <a class="el" href="d1/de1/structDnsNameInfo.html#ab11061dbd811e5f115a65e9fc4c00e32">DnsNameInfo</a>
 </li>
+<li>mServiceRegistrationEmaLatency
+: <a class="el" href="df/d8c/structotbr_1_1MdnsTelemetryInfo.html#a42ab96896743e45852af2aca6c3576e3">otbr::MdnsTelemetryInfo</a>
+</li>
+<li>mServiceResolutionEmaLatency
+: <a class="el" href="df/d8c/structotbr_1_1MdnsTelemetryInfo.html#ac5a1eb8c92e223353e5a212c810c50f0">otbr::MdnsTelemetryInfo</a>
+</li>
 <li>mServices
 : <a class="el" href="d9/dc0/structotbr_1_1DBus_1_1SrpServerInfo.html#afb4a1246590cae8fa211f66331954401">otbr::DBus::SrpServerInfo</a>
 </li>
@@ -409,6 +433,7 @@ $(function() {
 </li>
 <li>mSuccess
 : <a class="el" href="d9/d29/structotbr_1_1DBus_1_1SrpServerInfo_1_1ResponseCounters.html#af7d6a31e954b5cb9fdb979be6ed2695f">otbr::DBus::SrpServerInfo::ResponseCounters</a>
+, <a class="el" href="df/d4d/structotbr_1_1MdnsResponseCounters.html#a28cc01cf18feb99143d629b80b23c6fe">otbr::MdnsResponseCounters</a>
 </li>
 <li>mSuccessResponse
 : <a class="el" href="d0/daa/structotbr_1_1DBus_1_1DnssdCounters.html#a7adf4d1ea862565db0da21ad41adad2c">otbr::DBus::DnssdCounters</a>
@@ -480,6 +505,9 @@ $(function() {
 </li>
 <li>mTxUnicast
 : <a class="el" href="d6/d98/structotbr_1_1DBus_1_1MacCounters.html#ae0f9b9ab554aeddc799de785fa8308ef">otbr::DBus::MacCounters</a>
+</li>
+<li>mUnknownError
+: <a class="el" href="df/d4d/structotbr_1_1MdnsResponseCounters.html#a8655e16ad202f471c08b954f9499c45e">otbr::MdnsResponseCounters</a>
 </li>
 <li>mValue
 : <a class="el" href="d0/dee/structotbr_1_1Mdns_1_1Publisher_1_1TxtEntry.html#aa86175a8ad9a8714a4af0ebaa07cd698">otbr::Mdns::Publisher::TxtEntry</a>
