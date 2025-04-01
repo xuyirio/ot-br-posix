@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['packetsandbytes_941',['PacketsAndBytes',['../d9/dbc/structotbr_1_1DBus_1_1BorderRoutingCounters_1_1PacketsAndBytes.html',1,'otbr::DBus::BorderRoutingCounters']]],
-  ['parser_942',['Parser',['../d7/def/classotbr_1_1rest_1_1Parser.html',1,'otbr::rest']]],
-  ['pskc_943',['Pskc',['../d6/dad/classotbr_1_1Psk_1_1Pskc.html',1,'otbr::Psk']]],
-  ['publisher_944',['Publisher',['../da/ddc/classotbr_1_1Mdns_1_1Publisher.html',1,'otbr::Mdns']]],
-  ['publisheravahi_945',['PublisherAvahi',['../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html',1,'otbr::Mdns']]],
-  ['publishermdnssd_946',['PublisherMDnsSd',['../de/d29/classotbr_1_1Mdns_1_1PublisherMDnsSd.html',1,'otbr::Mdns']]]
+  ['oncecallback_0',['OnceCallback',['../d3/d2f/classotbr_1_1OnceCallback.html',1,'otbr']]],
+  ['oncecallback_3c_20r_28args_2e_2e_2e_29_3e_1',['OnceCallback&lt; R(Args...)&gt;',['../d3/d7b/classotbr_1_1OnceCallback_3_01R_07Args_8_8_8_08_4.html',1,'otbr']]],
+  ['oncecallback_3c_20void_28otbrerror_20aerror_29_3e_2',['OnceCallback&lt; void(otbrError aError)&gt;',['../d3/d2f/classotbr_1_1OnceCallback.html',1,'otbr']]],
+  ['onmeshprefix_3',['OnMeshPrefix',['../d5/d02/structotbr_1_1DBus_1_1OnMeshPrefix.html',1,'otbr::DBus']]],
+  ['openthreadclient_4',['OpenThreadClient',['../d3/d3f/classotbr_1_1Web_1_1OpenThreadClient.html',1,'otbr::Web']]],
+  ['optional_5',['Optional',['../de/dac/classOptional.html',1,'']]],
+  ['otnetworkproperties_6',['OtNetworkProperties',['../de/d7a/classotbr_1_1Host_1_1OtNetworkProperties.html',1,'otbr::Host']]]
 ];

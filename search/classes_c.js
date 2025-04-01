@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['radiocoexmetrics_947',['RadioCoexMetrics',['../d5/d2d/structotbr_1_1DBus_1_1RadioCoexMetrics.html',1,'otbr::DBus']]],
-  ['radiospinelmetrics_948',['RadioSpinelMetrics',['../dd/d09/structotbr_1_1DBus_1_1RadioSpinelMetrics.html',1,'otbr::DBus']]],
-  ['rcpinterfacemetrics_949',['RcpInterfaceMetrics',['../dc/d2a/structotbr_1_1DBus_1_1RcpInterfaceMetrics.html',1,'otbr::DBus']]],
-  ['registration_950',['Registration',['../da/d01/structotbr_1_1DBus_1_1SrpServerInfo_1_1Registration.html',1,'otbr::DBus::SrpServerInfo::Registration'],['../d3/dcf/classotbr_1_1Mdns_1_1Publisher_1_1Registration.html',1,'otbr::Mdns::Publisher::Registration']]],
-  ['request_951',['Request',['../da/df0/classotbr_1_1rest_1_1Request.html',1,'otbr::rest']]],
-  ['resource_952',['Resource',['../d7/d6e/classotbr_1_1rest_1_1Resource.html',1,'otbr::rest']]],
-  ['response_953',['Response',['../d2/db0/classotbr_1_1rest_1_1Response.html',1,'otbr::rest']]],
-  ['responsecounters_954',['ResponseCounters',['../d9/d29/structotbr_1_1DBus_1_1SrpServerInfo_1_1ResponseCounters.html',1,'otbr::DBus::SrpServerInfo']]],
-  ['restwebserver_955',['RestWebServer',['../d8/d5d/classotbr_1_1rest_1_1RestWebServer.html',1,'otbr::rest']]]
+  ['packetsandbytes_0',['PacketsAndBytes',['../d9/dbc/structotbr_1_1DBus_1_1BorderRoutingCounters_1_1PacketsAndBytes.html',1,'otbr::DBus::BorderRoutingCounters']]],
+  ['parser_1',['Parser',['../d7/def/classotbr_1_1rest_1_1Parser.html',1,'otbr::rest']]],
+  ['propsobserver_2',['PropsObserver',['../de/d18/classotbr_1_1Host_1_1PropsObserver.html',1,'otbr::Host']]],
+  ['pskc_3',['Pskc',['../d6/dad/classotbr_1_1Psk_1_1Pskc.html',1,'otbr::Psk']]],
+  ['publisher_4',['Publisher',['../da/ddc/classotbr_1_1Mdns_1_1Publisher.html',1,'otbr::Mdns']]],
+  ['publisheravahi_5',['PublisherAvahi',['../db/dc6/classotbr_1_1Mdns_1_1PublisherAvahi.html',1,'otbr::Mdns']]],
+  ['publishermdnssd_6',['PublisherMDnsSd',['../de/d29/classotbr_1_1Mdns_1_1PublisherMDnsSd.html',1,'otbr::Mdns']]]
 ];
